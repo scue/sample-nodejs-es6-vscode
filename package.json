@@ -1,0 +1,17 @@
+{
+    "name": "node",
+    "version": "1.0.0",
+    "description": "尝试玩一玩",
+    "main": "index.js",
+    "author": "scue",
+    "license": "MIT",
+    "scripts": {
+        "start": "babel-node index.js",
+        "debug": "babel-node debug index.js"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.1"
+    }
+}
