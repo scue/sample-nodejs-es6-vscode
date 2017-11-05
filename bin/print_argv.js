@@ -71,3 +71,15 @@ Base.prototype.hello = () => {
 };
 
 objBase.hello();
+
+import util from "util";
+util.inspect(objBase, true, 2, true);
+
+import { EventEmitter } from "events";
+
+let emitter = new EventEmitter();
+emitter.on("someEvent", () => {
+    console.log("this is from someEvent");
+});
+
+emitter.emit("someEvent");
